@@ -20,7 +20,7 @@ plot_jqpd <- function(params){
   quantile <- qjqpd(p, params)
   samples <- rjqpd(1000, params)
 
-  par(mfrow = c(2, 2))
+  graphics::par(mfrow = c(2, 2))
   plot(x, density,
        type = "l", main = "PDF", xlab = "x", ylab = "Density")
   plot(x, cdf,
