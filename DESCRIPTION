@@ -1,0 +1,23 @@
+Package: rjqpd
+Type: Package
+Title: The Johnson Quantile-Parameterised Distribution
+Version: 0.1.0
+Authors@R: person("Bobby", "Ingram", 
+                  email = "ingram.bob@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: Bobby Ingram <ingram.bob@gmail.com>
+Description: Implementation of the Johnson Quantile-Parameterised Distribution in R. 
+  The Johnson Quantile-Parameterised Distribution (J-QPD) is a flexible distribution
+  system that is parameterised by a symmetric percentile triplet of quantile values
+  (typically the 10th-50th-90th) along with known support bounds for the distribution.
+  The J-QPD system was developed by Hadlock and Bickel (2017) <doi:deca.2016.0343>.
+  This package implements the density, quantile, CDF and random number generator functions.
+Suggests:
+  devtools,
+  knitr,
+  rmarkdown,
+  testthat
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
