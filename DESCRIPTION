@@ -17,6 +17,8 @@ Suggests:
   knitr,
   rmarkdown,
   testthat
+URL: https://github.com/bobbyingram/rjqpd
+BugReports: https://github.com/bobbyingram/rjqpd/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
