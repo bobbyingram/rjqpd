@@ -10,7 +10,7 @@ plot_jqpd <- function(params){
   lower <- params$lower
   upper <- params$upper
   if (is.infinite(upper)){
-    upper <- qjqpd(0.999, x)
+    upper <- qjqpd(0.999, params)
   }
 
   x <- seq(lower, upper, length.out = 100)
