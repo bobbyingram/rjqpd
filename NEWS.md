@@ -1,3 +1,7 @@
+# rjpqd 0.2.2
+
+* Fixed DOI in DESCRIPTION file.
+
 # rjqpd 0.2.1
 
 * Fixed bug in `plot_jqpd` for semi-bounded distributions.
