@@ -1,3 +1,5 @@
+# rjqpd 0.2.3
+
 # rjpqd 0.2.2
 
 * Fixed DOI in DESCRIPTION file.
