@@ -21,8 +21,8 @@ plot_jqpd <- function(params){
   quantile <- qjqpd(p, params)
   samples <- rjqpd(1000, params)
 
-  old <- par(mfrow = c(2, 2), xaxs = "i", yaxs = "i")
-  on.exit(par(old), add = TRUE)
+  old <- graphics::par(mfrow = c(2, 2), xaxs = "i", yaxs = "i")
+  on.exit(graphics::par(old), add = TRUE)
 
   plot(x, density,
        type = "l", main = "PDF", xlab = "x", ylab = "Density")
