@@ -47,7 +47,6 @@ jqpd <- function(x, lower = 0, upper = Inf, alpha = 0.1){
          lower < x[1] < x[2] < x[3] < upper")
   }
 
-  # Lots of sanity checks here.
   if(is.infinite(upper)){
     return(semibounded_params(x, lower, alpha))
   }
