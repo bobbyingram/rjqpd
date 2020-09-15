@@ -1,5 +1,8 @@
 # rjqpd 0.2.3
 
+* Restore user graphical parameter settings on exit of `plot_jqpd`.
+* Documented return values of moment functions.
+
 # rjpqd 0.2.2
 
 * Fixed DOI in DESCRIPTION file.

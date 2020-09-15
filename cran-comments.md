@@ -1,3 +1,9 @@
+## Resubmission 2
+This is a resubmission. In this version I have:
+
+* restored users original graphical parameter settings on exit of `plot_jqpd`
+* documented return types of moments and plot functions.
+
 ## Resubmission
 This is a resubmission. In this version I have:
 
