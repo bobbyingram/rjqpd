@@ -10,6 +10,9 @@ plot_jqpd(params)
 \arguments{
 \item{params}{jqpd object created using \code{jqpd()}}
 }
+\value{
+no return value, called for side effects only
+}
 \description{
 Plots the density, cumulative distribution function, quantile function and a
 set of 1000 random samples for a Johnson Quantile-Parameterised Distribution.
