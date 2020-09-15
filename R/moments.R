@@ -7,6 +7,7 @@ moments <- function(params, n = 1, c = 0, ...){
 #' Calculates the mean of a Johnson Quantile-Parameterised Distribution.
 #'
 #' @param params jqpd object created using \code{jqpd()}
+#' @return The mean of the distribution as a length one numeric vector.
 #' @export
 jqpd_mean <- function(params) {
   if(!is_jqpd_obj(params)){
@@ -18,6 +19,7 @@ jqpd_mean <- function(params) {
 #' Calculates the variance of a Johnson Quantile-Parameterised Distribution.
 #'
 #' @param params jqpd object created using \code{jqpd()}
+#' @return The variance of the distribution as a length one numeric vector.
 #' @export
 jqpd_var <- function(params){
   if(class(params) != "jqpd"){
@@ -31,6 +33,8 @@ jqpd_var <- function(params){
 #' Distribution.
 #'
 #' @param params jqpd object created using \code{jqpd()}
+#' @return The standard deviation of the distribution as a length one numeric
+#' vector.
 #' @export
 jqpd_sd <- function(params){
   sqrt(jqpd_var(params))
@@ -40,6 +44,7 @@ jqpd_sd <- function(params){
 #' Distribution.
 #'
 #' @param params jqpd object created using \code{jqpd()}
+#' @return The skewness of the distribution as a length one numeric vector.
 #' @export
 jqpd_skewness <- function(params){
   if(class(params) != "jqpd"){
@@ -54,6 +59,7 @@ jqpd_skewness <- function(params){
 #' Distribution.
 #'
 #' @param params jqpd object created using \code{jqpd()}
+#' @return The kurtosis of the distribution as a length one numeric vector.
 #' @export
 jqpd_kurtosis <- function(params){
   if(class(params) != "jqpd"){

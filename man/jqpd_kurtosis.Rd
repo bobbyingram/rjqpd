@@ -10,6 +10,9 @@ jqpd_kurtosis(params)
 \arguments{
 \item{params}{jqpd object created using \code{jqpd()}}
 }
+\value{
+The kurtosis of the distribution as a length one numeric vector.
+}
 \description{
 Calculates the kurtosis of a Johnson Quantile-Parameterised
 Distribution.

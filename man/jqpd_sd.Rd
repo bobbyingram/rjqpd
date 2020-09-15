@@ -10,6 +10,10 @@ jqpd_sd(params)
 \arguments{
 \item{params}{jqpd object created using \code{jqpd()}}
 }
+\value{
+The standard deviation of the distribution as a length one numeric
+vector.
+}
 \description{
 Calculates the standard-deviation of a Johnson Quantile-Parameterised
 Distribution.
