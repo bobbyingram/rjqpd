@@ -1,13 +1,15 @@
-## Resubmission 2
+## Resubmission 0.2.3
 This is a resubmission. In this version I have:
 
 * restored users original graphical parameter settings on exit of `plot_jqpd`
 * documented return types of moments and plot functions.
 
-## Resubmission
+## Resubmission 0.2.2
 This is a resubmission. In this version I have:
 
 * Fixed the DOI in the DESCRIPTION.
+
+## Submission 0.2.1
 
 ## Test environments
 * local R installation, R 4.0.2
