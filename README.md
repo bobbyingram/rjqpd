@@ -42,12 +42,17 @@ this way the need for curve fitting can be eliminated.
 
 ## Installation
 
-The `rjqpd` package is not yet available on CRAN.
-
-You can install the latest development version of `rjqpd` using:
+Install the released version from [CRAN](https://CRAN.R-project.org)
+with:
 
 ``` r
-devtools::install_github("bobbyingram/rjqpd")
+install.packages("rjqpd")
+```
+
+Install the development version from [GitHub](https://github.com/) with:
+
+``` r
+remotes::install_github("bobbyingram/rjqpd")
 ```
 
 ## Basic Usage
@@ -74,8 +79,8 @@ library(rjqpd)
 # alpha = 0.1 indicates a symmetric percentile triplet (SPT) of (0.1, 0.5, 0.9)
 alpha <- 0.1
 # we parameterise using some quantile values corresponding to the SPT above.
-quantiles <- c(0.32, 0.40, 0.60)
-params <- jqpd(quantiles, lower = 0, upper = 1, alpha = alpha)
+quantiles <- c(32, 40.5, 60)
+params <- jqpd(quantiles, lower = 0, upper = 100, alpha = alpha)
 
 # The CDF should return the (SPT) at the quantile values:
 pjqpd(quantiles, params)
@@ -108,25 +113,25 @@ We also provide some basic summary statistics functions:
 
 ``` r
 jqpd_mean(params)
-#> [1] 0.4350185
+#> [1] 43.71438
 ```
 
 ``` r
 jqpd_var(params)
-#> [1] 0.01604665
+#> [1] 155.1076
 ```
 
 ``` r
 jqpd_sd(params)
-#> [1] 0.1266754
+#> [1] 12.45422
 ```
 
 ``` r
 jqpd_skewness(params)
-#> [1] 1.69221
+#> [1] 1.585366
 ```
 
 ``` r
 jqpd_kurtosis(params)
-#> [1] 6.464129
+#> [1] 6.14006
 ```

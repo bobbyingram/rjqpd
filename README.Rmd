@@ -49,12 +49,16 @@ eliminated.
 
 ## Installation
 
-The `rjqpd` package is not yet available on CRAN.
+Install the released version from [CRAN](https://CRAN.R-project.org) with:
 
-You can install the latest development version of `rjqpd` using:
+```{r, eval=FALSE}
+install.packages("rjqpd")
+```
 
-``` r
-devtools::install_github("bobbyingram/rjqpd")
+Install the development version from [GitHub](https://github.com/) with:
+
+```{r, eval=FALSE}
+remotes::install_github("bobbyingram/rjqpd")
 ```
 
 ## Basic Usage
@@ -80,8 +84,8 @@ library(rjqpd)
 # alpha = 0.1 indicates a symmetric percentile triplet (SPT) of (0.1, 0.5, 0.9)
 alpha <- 0.1
 # we parameterise using some quantile values corresponding to the SPT above.
-quantiles <- c(0.32, 0.40, 0.60)
-params <- jqpd(quantiles, lower = 0, upper = 1, alpha = alpha)
+quantiles <- c(32, 40.5, 60)
+params <- jqpd(quantiles, lower = 0, upper = 100, alpha = alpha)
 
 # The CDF should return the (SPT) at the quantile values:
 pjqpd(quantiles, params)
